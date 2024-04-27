@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Real Madrid</title>
+  <style>
+    /* Global Styles */
+    body {
+      background-color: #003399; /* Blue background color with high contrast */
+      color: white;
+      font-family: Arial, sans-serif;
+    }
+
+    /* Navigation Bar Styles */
+    nav {
+      background-color: #000033; /* Dark blue background color for nav bar */
+      padding: 10px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    nav a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    nav a:hover {
+      color: #ccccff; /* Light blue hover color */
+    }
+
+    /* Header Styles */
+   .header-1 {
+      font-size: 2rem;
+    }
+
+   .header-2 {
+      font-size: 1.5rem;
+    }
+
+   .header-3 {
+      font-size: 1.2rem;
+    }
+
+    /* Highlight Styles */
+   .highlight {
+      color: #ffcc00; /* Yellow highlight color */
+    }
+
+    /* Shopping Cart Styles */
+   .shopping-cart {
+      position: relative;
+    }
+
+   .shopping-cart::before {
+      content: "";
+      background-image: url("shopping-cart.png");
+      background-size: cover;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+
+    /* Theme Switch Styles */
+   .theme-switch {
+      position: relative;
+    }
+
+   .theme-switch::before {
+      content: "";
+      background-image: url("moon.png");
+      background-size: cover;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+   .theme-switch::after {
+      content: "";
+      background-image: url("sun.png");
+      background-size: cover;
+      width: 24px;
+      height: 24px;
+      position: absolute;
+      top: 0;
+      left: 0;
+    }
+
+   .theme-switch input {
+      display: none;
+    }
+
+   .theme-switch input:checked + label::before {
+      display: none;
+    }
+
+   .theme-switch input:checked + label::after {
+      display: block;
+    }
+
+    /* Footer Styles */
+    footer {
+      background-color: #000033; /* Dark blue background color for footer */
+      padding: 10px;
+      text-align: center;
+    }
+
+    /* Social Media Styles */
+   .social-media {
+      display: flex;
+      justify-content: center;
+    }
+
+   .social-media a {
+      color: white;
+      text-decoration: none;
+      margin: 0 10px;
+    }
+
+    /* Search Bar Styles */
+   .search-bar {
+      margin: 10px;
+    }
+
+    /* Reminder Styles */
+   .reminder {
+      margin: 10px;
+    }
+  </style>
+</head>
+<body>
+  <!-- Navigation Bar -->
+  <nav>
+    <a href="#" class="header-1">Real Madrid</a>
+    <div class="search-bar">
+      <label for="search-input">Search:</label>
+      <input type="text" id="search-input">
+    </div>
+    <div class="theme-switch">
+      <input type="checkbox" id="
